@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "http://repositorytest.ancient-astronomy.org/img/edition-topoi_logo.svg",
+    "link": "http://repositorytest.ancient-astronomy.org/collection/PROM",
+    "text": "Prosopographia Memphitica (ProM) by Anne Herzberg-Beiersdorf"
+  },
+  "text": {
+    "more": "The example of a 2-mode network shown here comprises 84 nodes of the node type ‘tomb’ (green) and 270 nodes of the node type ‘persons’ (red). The nodes are related by edges, which represent the attestation of a person within a tomb\u0027s decoration. There are six tombs that doesn\u0027t show any edges, which means that the tomb owners remain anonymous. The node size helps to distinguish between the tomb owner, who is shown as a bigger node and other persons attested in the same tomb. ",
+    "intro": "2-mode network of persons attested in Memphite Tomb Chapels dating to the New Kingdom",
+    "title": "Memphite Tomb Network"
+  },
+  "legend": {
+    "edgeLabel": "shows the persons attested in tombs",
+    "colorLabel": "green: tombs, red: persons",
+    "nodeLabel": "node type I: tombs, node type II: persons"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "date",
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": false,
+    "imageAttribute": "name"
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}
