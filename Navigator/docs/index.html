@@ -88,19 +88,11 @@
 <script>
 var data_from_ajax;
 
-/*
-$( "form" ).submit(function( event ) {
-  alert($("#first" ).val())
-  alert($("#second" ).val())
-  event.preventDefault();
-});
-*/
-
 $("document").ready(function(){
 $( "form" ).submit(function( event ) {
-$.get("http://localhost/Datenbankabfrage/first1.php?parameter1="+$("#first").val()+"&parameter2="+$("#second").val(), function(data) {
-  var obj = $.parseJSON(data);
-  
+$.getJSON('result.json', function(obj) {
+/*$.get("http://localhost/Datenbankabfrage/first1.php?parameter1="+$("#first").val()+"&parameter2="+$("#second").val(), function(data) {
+  var obj = $.parseJSON(data);*/
   if (w2ui['myGrid'] != null) {
   w2ui['myGrid'].destroy();
   
